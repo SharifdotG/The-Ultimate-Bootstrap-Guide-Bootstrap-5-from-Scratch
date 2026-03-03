@@ -20,7 +20,7 @@ This repository contains my notes and projects from the "The Ultimate Bootstrap 
 
 ## Tasks
 
-- [] No tasks are assigned yet.
+No tasks are assigned yet.
 
 ## Course Link
 
