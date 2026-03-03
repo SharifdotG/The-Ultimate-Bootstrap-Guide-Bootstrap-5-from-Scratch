@@ -8,8 +8,8 @@ This repository contains my notes and projects from the "The Ultimate Bootstrap 
 
 - [x] [**Section 1: Getting Started with Bootstrap 5**](/Section%201%20-%20Getting%20Started%20with%20Bootstrap%205/)
 - [x] [**Section 2: Layouts in Bootstrap 5**](/Section%202%20-%20Layouts%20in%20Bootstrap%205/)
-- [ ] [*Section 3: Contents in Bootstrap 5 (Currently Learning)*](/Section%203%20-%20Contents%20in%20Bootstrap%205/)
-- [ ] Section 4: Forms in Bootstrap 5
+- [x] [**Section 3: Contents in Bootstrap 5**](/Section%203%20-%20Contents%20in%20Bootstrap%205/)
+- [ ] [*Section 4: Forms in Bootstrap 5 (Currently Learning)*](/Section%204%20-%20Forms%20in%20Bootstrap%205/)
 - [ ] Section 5: Components in Bootstrap 5
 - [ ] Section 6: Helpers in Bootstrap 5
 - [ ] Section 7: Utilities in Bootstrap 5
