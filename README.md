@@ -17,7 +17,8 @@ This repository contains my notes and projects from the "The Ultimate Bootstrap 
 - [ ] Section 7: Utilities in Bootstrap 5
 - [x] **Section 8: Project 1: EMS Web with Bootstrap 5**
   - **Live Demo: <https://sharifdotg-ems-web-bootstrap5.vercel.app/>**
-- [ ] Section 9: Project 2: Blog App with Bootstrap 5
+- [x] **Section 9: Project 2: Blog App with Bootstrap 5**
+  - **Live Demo: <https://sharifdotg-blog-app-bootstrap5.vercel.app/>**
 - [ ] Section 10: Project 3: Real-World Education Project
 - [ ] Section 11: Bootstrap 5 - Practice Test
 
