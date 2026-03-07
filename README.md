@@ -20,7 +20,7 @@ This repository contains my notes and projects from the "The Ultimate Bootstrap 
 - [x] **Section 9: Project 2: Blog App with Bootstrap 5**
   - **Live Demo: <https://sharifdotg-blog-app-bootstrap5.vercel.app/>**
 - [x] **Section 10: Project 3: Real-World Education Project**
-  - **Live Demo: <https://sharifdotg-education-project-bootstrap5.vercel.app/>**
+  - **Live Demo: <https://sharifdotg-education-project-bootst.vercel.app/>**
 - [ ] Section 11: Bootstrap 5 - Practice Test
 
 ## Tasks
