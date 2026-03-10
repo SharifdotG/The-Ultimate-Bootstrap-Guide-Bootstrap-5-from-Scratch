@@ -29,6 +29,10 @@
       .vr {
         color: white;
       }
+
+      .navbar-search-group {
+        min-width: 0;
+      }
     </style>
   </head>
   <body class="bg-light">
@@ -79,8 +83,11 @@
             </li>
           </ul>
 
-          <form class="d-flex" role="search">
-            <div class="hstack gap-3 me-3">
+          <form
+            class="d-flex flex-column flex-sm-row align-items-stretch align-items-sm-center gap-2 mt-3 mt-lg-0"
+            role="search"
+          >
+            <div class="hstack gap-2 me-sm-3 navbar-search-group">
               <input
                 type="search"
                 class="form-control form-control-sm me-auto"
@@ -102,8 +109,8 @@
                 </svg>
               </button>
             </div>
-            <div class="vr"></div>
-            <a href="index.html" class="btn btn-sm btn-warning ms-3">
+            <div class="vr d-none d-sm-block"></div>
+            <a href="index.html" class="btn btn-sm btn-warning ms-sm-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -126,26 +133,32 @@
 
     <!-- Cards -->
     <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-3">
+      <div class="row justify-content-center g-3">
+        <div class="col-sm-6 col-lg-3">
           <div class="card text-bg-primary shadow text-center">
             <div class="card-header">Employees List</div>
             <div class="card-body">
               <span class="fs-1">254+</span>
             </div>
-            <a href="employees-list.html" class="card-footer small text-decoration-none text-white">
+            <a
+              href="employees-list.html"
+              class="card-footer small text-decoration-none text-white"
+            >
               View Employees
             </a>
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-sm-6 col-lg-3">
           <div class="card text-bg-primary shadow text-center">
             <div class="card-header">Jobs List</div>
             <div class="card-body">
               <span class="fs-1">25+</span>
             </div>
-            <a href="jobs-list.html" class="card-footer small text-decoration-none text-white">
+            <a
+              href="jobs-list.html"
+              class="card-footer small text-decoration-none text-white"
+            >
               View All Jobs
             </a>
           </div>

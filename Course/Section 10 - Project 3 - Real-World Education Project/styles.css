@@ -1,24 +1,97 @@
 .navbar-brand img {
-  width: 130px;
+  width: clamp(100px, 18vw, 130px);
+  max-width: 100%;
 }
+
 .full-width {
   width: 100%;
   height: auto;
 }
+
 .feature-item img {
-  width: 50px;
+  width: clamp(40px, 8vw, 50px);
   height: auto;
 }
+
 .subscribe {
   background-image: url(images/subscribe.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .brand-icon img {
   width: 150px;
   height: auto;
 }
+
 .blur-filter {
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   background-color: rgb(255 255 255 / 30%);
+}
+
+.feature-item {
+  height: 100%;
+}
+
+.breadcrumb {
+  flex-wrap: wrap;
+}
+
+.blur-filter .navbar-collapse {
+  row-gap: 0.75rem;
+}
+
+.blur-filter .navbar-collapse form[role="search"] {
+  width: 100%;
+  max-width: 280px;
+}
+
+.blur-filter .navbar-collapse .input-group {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .blur-filter .navbar-collapse > .ms-auto.me-1 {
+    display: grid !important;
+    gap: 0.5rem !important;
+    width: 100%;
+  }
+
+  .blur-filter .navbar-collapse form[role="search"] {
+    max-width: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .blur-filter .navbar-collapse > .ms-auto.me-1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-features .col-md-4,
+  .contact-content-header .col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header-text-holder,
+  .blog-header-text-holder,
+  .single-course-content-holder {
+    padding-right: 0 !important;
+  }
+
+  .home-header-image-holder,
+  .blog-header-image-holder,
+  .post-header-image-holder {
+    margin-top: 1rem;
+  }
+
+  .post-header .blog-header-text-holder > p,
+  .reviews-holder {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }

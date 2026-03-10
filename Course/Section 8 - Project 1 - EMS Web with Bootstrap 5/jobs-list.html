@@ -29,6 +29,10 @@
       .vr {
         color: white;
       }
+
+      .navbar-search-group {
+        min-width: 0;
+      }
     </style>
   </head>
   <body class="bg-light">
@@ -79,8 +83,11 @@
             </li>
           </ul>
 
-          <form class="d-flex" role="search">
-            <div class="hstack gap-3 me-3">
+          <form
+            class="d-flex flex-column flex-sm-row align-items-stretch align-items-sm-center gap-2 mt-3 mt-lg-0"
+            role="search"
+          >
+            <div class="hstack gap-2 me-sm-3 navbar-search-group">
               <input
                 type="search"
                 class="form-control form-control-sm me-auto"
@@ -102,8 +109,8 @@
                 </svg>
               </button>
             </div>
-            <div class="vr"></div>
-            <a href="index.html" class="btn btn-sm btn-warning ms-3">
+            <div class="vr d-none d-sm-block"></div>
+            <a href="index.html" class="btn btn-sm btn-warning ms-sm-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -127,7 +134,7 @@
     <!-- Jobs Data -->
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-2">
+        <div class="col-lg-2 col-md-3 mb-3">
           <div class="list-group shadow-sm small mb-3">
             <div class="list-group-item active">Jobs Data</div>
             <a
@@ -153,166 +160,168 @@
             >
           </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-lg-10 col-md-9">
           <div class="card shadow-sm border-0 mb-3">
             <div class="card-header text-bg-dark text-center">Jobs List</div>
-            <table class="table table-sm table-bordered align-middle mb-0">
-              <tr class="table-secondary">
-                <th>ID</th>
-                <th>Job Name</th>
-                <th>Details</th>
-                <th>Edit</th>
-                <th>Delete</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Graphic Designer</td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_detail"
-                      >Details</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-warning"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_edit"
-                      >Edit</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-danger"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_delete"
-                      >Delete</a
-                    >
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Web Designer</td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_detail"
-                      >Details</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-warning"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_edit"
-                      >Edit</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-danger"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_delete"
-                      >Delete</a
-                    >
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Web Developer</td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_detail"
-                      >Details</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-warning"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_edit"
-                      >Edit</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-danger"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_delete"
-                      >Delete</a
-                    >
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Digital Marketer</td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-primary"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_detail"
-                      >Details</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-warning"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_edit"
-                      >Edit</a
-                    >
-                  </div>
-                </td>
-                <td>
-                  <div class="d-grid">
-                    <a
-                      href="#"
-                      class="btn btn-sm btn-danger"
-                      data-bs-toggle="modal"
-                      data-bs-target="#job_delete"
-                      >Delete</a
-                    >
-                  </div>
-                </td>
-              </tr>
-            </table>
+            <div class="table-responsive">
+              <table class="table table-sm table-bordered align-middle mb-0">
+                <tr class="table-secondary">
+                  <th>ID</th>
+                  <th>Job Name</th>
+                  <th>Details</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Graphic Designer</td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_detail"
+                        >Details</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-warning"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_edit"
+                        >Edit</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_delete"
+                        >Delete</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Web Designer</td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_detail"
+                        >Details</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-warning"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_edit"
+                        >Edit</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_delete"
+                        >Delete</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Web Developer</td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_detail"
+                        >Details</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-warning"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_edit"
+                        >Edit</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_delete"
+                        >Delete</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Digital Marketer</td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_detail"
+                        >Details</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-warning"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_edit"
+                        >Edit</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-grid">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#job_delete"
+                        >Delete</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -528,7 +537,8 @@
             class="modal-body text-center d-flex justify-content-between align-items-center"
           >
             <h4 class="fw-light m-0">
-              Do you really want to delete job <strong><q>Graphic Designer</q></strong
+              Do you really want to delete job
+              <strong><q>Graphic Designer</q></strong
               >?
             </h4>
             <button
